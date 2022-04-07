@@ -9,18 +9,18 @@ import java.util.Random;
 public class BillingRequest {
 
 
-    private static int accountNumber;
+    private static String accountNumber;
     private String tariff;
     public static String setAccountNumber() {
-        int accountNumber;
+        String accountNumber;
 
         Random rand = new Random();
-        accountNumber= rand.nextInt(123456789);
+        accountNumber= String.valueOf(rand.nextInt(123456789));
         return (BillingRequest.accountNumber = accountNumber) + "-1";
 
     }
 
-    public static int getAccountNumber() {
+    public static String getAccountNumber() {
         return accountNumber;
     }
 

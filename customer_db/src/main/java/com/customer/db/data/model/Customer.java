@@ -21,6 +21,7 @@ public class Customer {
     @NotNull
     private  String email;
     @OneToOne
+    @ToString.Exclude
     private Billing billingDetail;
 
     public Customer(Integer id,

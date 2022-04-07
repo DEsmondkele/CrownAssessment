@@ -17,9 +17,8 @@ import java.util.Objects;
 public class Billing {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    @NotNull
     private Integer id;
-    private int accountNumber;
+    private String accountNumber;
     private String tariff;
 
 }
